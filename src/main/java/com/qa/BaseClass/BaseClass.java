@@ -87,12 +87,15 @@ public class BaseClass
 
 	public static void initialization() throws MalformedURLException
 	{
-		String browserName = prop.getProperty("browser");
+		//String browserName = prop.getProperty("browser");
+		String browserName = "Chrome";
 
 		if(browserName.equals("Chrome")){
-			System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");	
+			//System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
+			//System.setProperty(prop.getProperty("Chrome_Key"),prop.getProperty("Chrome_Path"));
+			System.setProperty("webdriver.chrome.driver","D:\\Karthick Project\\RecentWork\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver(); 
-		}
+			}
 		else if(browserName.equals("FireFox")){
 			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");	
 			driver = new FirefoxDriver(); 
