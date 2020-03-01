@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 9, 2020 05:50:50 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 16, 2020 12:33:32 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,7 +71,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +138,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='14.286%'><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>9</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -155,17 +156,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Validation of Logo On Amazon Home Page</span>
-						<span class='test-time'>Feb 9, 2020 05:51:04 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Feb 16, 2020 12:33:45 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 9, 2020 05:51:04 PM</span>
-	<span class='label end-time'>Feb 9, 2020 05:51:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+222ms</span>
+	<span class='label start-time'>Feb 16, 2020 12:33:45 PM</span>
+	<span class='label end-time'>Feb 16, 2020 12:33:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+942ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -177,35 +178,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:25 PM</td>
-					<td class='step-details'><span class='label white-text red'>AmazonLogoTest - Test Case Failed</span></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:25 PM</td>
-					<td class='step-details'><span class='label white-text red'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='nav-sprite nav-logo-base']"}
-  (Session info: chrome=80.0.3987.87)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d264a2727cded1c46b68a2ce48c27cf1
-*** Element info: {Using=xpath, value=//span[@class='nav-sprite nav-logo-base']} - Test Case Failed</span></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:26 PM</td>
-					<td class='step-details'>Test Case Failed Snapshot is below com.aventstack.extentreports.ExtentTest@37c7595</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:33:47 PM</td>
+					<td class='step-details'><span class='label white-text green'>AmazonLogoTest Test Case PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='AmazonLogoTest' width='10%' src='AmazonLogoTest' data-src='AmazonLogoTest'></li>
-							</ul>
 					</div>
 				</li>
 				
@@ -213,14 +193,14 @@ Session ID: d264a2727cded1c46b68a2ce48c27cf1
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Validation of Tittle On Amazon Home Page</span>
-						<span class='test-time'>Feb 9, 2020 05:51:26 PM</span>
+						<span class='test-time'>Feb 16, 2020 12:33:47 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 9, 2020 05:51:26 PM</span>
-	<span class='label end-time'>Feb 9, 2020 05:51:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+491ms</span>
+	<span class='label start-time'>Feb 16, 2020 12:33:47 PM</span>
+	<span class='label end-time'>Feb 16, 2020 12:33:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+239ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -234,18 +214,18 @@ Session ID: d264a2727cded1c46b68a2ce48c27cf1
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:26 PM</td>
+					<td class='timestamp'>12:33:47 PM</td>
 					<td class='step-details'><span class='label white-text red'>ConsumerPortalTittle - Test Case Failed</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:26 PM</td>
-					<td class='step-details'><span class='label white-text red'>java.lang.AssertionError: expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [Google] - Test Case Failed</span></td>
+					<td class='timestamp'>12:33:47 PM</td>
+					<td class='step-details'><span class='label white-text red'>java.lang.AssertionError: expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in] - Test Case Failed</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:26 PM</td>
-					<td class='step-details'>Test Case Failed Snapshot is below com.aventstack.extentreports.ExtentTest@47f4e407</td>
+					<td class='timestamp'>12:33:48 PM</td>
+					<td class='step-details'>Test Case Failed Snapshot is below com.aventstack.extentreports.ExtentTest@5f6722d3</td>
 				</tr>
 			</tbody>
 		</table>
@@ -260,14 +240,14 @@ Session ID: d264a2727cded1c46b68a2ce48c27cf1
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Validation of Amazon Customer Login</span>
-						<span class='test-time'>Feb 9, 2020 05:51:26 PM</span>
+						<span class='test-time'>Feb 16, 2020 12:33:48 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 9, 2020 05:51:26 PM</span>
-	<span class='label end-time'>Feb 9, 2020 05:51:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+147ms</span>
+	<span class='label start-time'>Feb 16, 2020 12:33:48 PM</span>
+	<span class='label end-time'>Feb 16, 2020 12:34:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+609ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -281,26 +261,26 @@ Session ID: d264a2727cded1c46b68a2ce48c27cf1
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:47 PM</td>
+					<td class='timestamp'>12:34:13 PM</td>
 					<td class='step-details'><span class='label white-text red'>ConsumerLogoTest - Test Case Failed</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:47 PM</td>
-					<td class='step-details'><span class='label white-text red'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Hello. Sign in')]"}
-  (Session info: chrome=80.0.3987.87)
+					<td class='timestamp'>12:34:13 PM</td>
+					<td class='step-details'><span class='label white-text red'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ap_password']"}
+  (Session info: chrome=80.0.3987.106)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d264a2727cded1c46b68a2ce48c27cf1
-*** Element info: {Using=xpath, value=//span[contains(text(),'Hello. Sign in')]} - Test Case Failed</span></td>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a5156696e0efde3b0845dd6845a8b2d
+*** Element info: {Using=xpath, value=//input[@id='ap_password']} - Test Case Failed</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:51:47 PM</td>
-					<td class='step-details'>Test Case Failed Snapshot is below com.aventstack.extentreports.ExtentTest@1506f20f</td>
+					<td class='timestamp'>12:34:13 PM</td>
+					<td class='step-details'>Test Case Failed Snapshot is below com.aventstack.extentreports.ExtentTest@37bd68c3</td>
 				</tr>
 			</tbody>
 		</table>
@@ -351,25 +331,25 @@ Session ID: d264a2727cded1c46b68a2ce48c27cf1
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 9, 2020 05:50:50 PM</div>
+					<div class='panel-lead'>Feb 16, 2020 12:33:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 9, 2020 05:51:48 PM</div>
+			 		<div class='panel-lead'>Feb 16, 2020 12:34:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 58s+573ms</div>
+					<div class='panel-lead'>0h 0m 41s+918ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -406,22 +386,22 @@ Session ID: d264a2727cded1c46b68a2ce48c27cf1
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 3,
+				passParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 3,
+				exceptionsParent: 2,
 				
-				passChild: 0,
-				failChild: 9,
+				passChild: 1,
+				failChild: 6,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 9,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

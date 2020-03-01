@@ -1,118 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43635" started-at="2020-02-09T12:21:04Z" finished-at="2020-02-09T12:21:48Z">
+  <suite name="Default suite" duration-ms="28744" started-at="2020-02-16T07:03:45Z" finished-at="2020-02-16T07:04:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43635" started-at="2020-02-09T12:21:04Z" finished-at="2020-02-09T12:21:48Z">
+    <test name="Default test" duration-ms="28744" started-at="2020-02-16T07:03:45Z" finished-at="2020-02-16T07:04:14Z">
       <class name="com.qa.TestCase.AmazonLoginPageTest">
-        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="ReportSetup" is-config="true" duration-ms="244" started-at="2020-02-09T12:20:49Z" finished-at="2020-02-09T12:20:50Z">
+        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="ReportSetup" is-config="true" duration-ms="262" started-at="2020-02-16T07:03:32Z" finished-at="2020-02-16T07:03:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="setup" is-config="true" duration-ms="14731" started-at="2020-02-09T12:20:50Z" depends-on-methods="com.qa.BaseClass.BaseClass.ReportSetup" finished-at="2020-02-09T12:21:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="setup" is-config="true" duration-ms="12966" started-at="2020-02-16T07:03:32Z" depends-on-methods="com.qa.BaseClass.BaseClass.ReportSetup" finished-at="2020-02-16T07:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="AmazonLogoTest()[pri:1, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="AmazonLogoTest" duration-ms="20752" started-at="2020-02-09T12:21:04Z" description="Validation of Logo On Amazon Home Page" finished-at="2020-02-09T12:21:25Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='nav-sprite nav-logo-base']"}
-  (Session info: chrome=80.0.3987.87)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d264a2727cded1c46b68a2ce48c27cf1
-*** Element info: {Using=xpath, value=//span[@class='nav-sprite nav-logo-base']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='nav-sprite nav-logo-base']"}
-  (Session info: chrome=80.0.3987.87)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d264a2727cded1c46b68a2ce48c27cf1
-*** Element info: {Using=xpath, value=//span[@class='nav-sprite nav-logo-base']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
-at com.sun.proxy.$Proxy9.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at com.qa.TestPackage.AmazonLoginPage.LogoPresent(AmazonLoginPage.java:35)
-at com.qa.TestCase.AmazonLoginPageTest.AmazonLogoTest(AmazonLoginPageTest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="AmazonLogoTest()[pri:1, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="AmazonLogoTest" duration-ms="1917" started-at="2020-02-16T07:03:45Z" description="Validation of Logo On Amazon Home Page" finished-at="2020-02-16T07:03:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmazonLogoTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="getResult" is-config="true" duration-ms="472" started-at="2020-02-09T12:21:25Z" finished-at="2020-02-09T12:21:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="getResult" is-config="true" duration-ms="44" started-at="2020-02-16T07:03:47Z" finished-at="2020-02-16T07:03:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AmazonLogoTest status=FAILURE method=AmazonLoginPageTest.AmazonLogoTest()[pri:1, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2] output={null}]]]>
+                <![CDATA[[TestResult name=AmazonLogoTest status=SUCCESS method=AmazonLoginPageTest.AmazonLogoTest()[pri:1, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="ConsumerPortalTittle()[pri:2, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="ConsumerPortalTittle" duration-ms="23" started-at="2020-02-09T12:21:26Z" description="Validation of Tittle On Amazon Home Page" finished-at="2020-02-09T12:21:26Z">
+        <test-method status="FAIL" signature="ConsumerPortalTittle()[pri:2, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="ConsumerPortalTittle" duration-ms="131" started-at="2020-02-16T07:03:47Z" description="Validation of Tittle On Amazon Home Page" finished-at="2020-02-16T07:03:47Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [Google]]]>
+              <![CDATA[expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [Google]
+              <![CDATA[java.lang.AssertionError: expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -121,9 +45,9 @@ at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
 at com.qa.TestCase.AmazonLoginPageTest.ConsumerPortalTittle(AmazonLoginPageTest.java:45)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -151,7 +75,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConsumerPortalTittle -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="getResult" is-config="true" duration-ms="468" started-at="2020-02-09T12:21:26Z" finished-at="2020-02-09T12:21:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="getResult" is-config="true" duration-ms="1106" started-at="2020-02-16T07:03:47Z" finished-at="2020-02-16T07:03:48Z">
           <params>
             <param index="0">
               <value>
@@ -162,33 +86,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="ConsumerLogoTest()[pri:3, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="ConsumerLogoTest" duration-ms="20672" started-at="2020-02-09T12:21:26Z" description="Amazon Customer Login Page" finished-at="2020-02-09T12:21:47Z">
+        <test-method status="FAIL" signature="ConsumerLogoTest()[pri:3, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="ConsumerLogoTest" duration-ms="24082" started-at="2020-02-16T07:03:48Z" description="Amazon Customer Login Page" finished-at="2020-02-16T07:04:13Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Hello. Sign in')]"}
-  (Session info: chrome=80.0.3987.87)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ap_password']"}
+  (Session info: chrome=80.0.3987.106)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d264a2727cded1c46b68a2ce48c27cf1
-*** Element info: {Using=xpath, value=//span[contains(text(),'Hello. Sign in')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a5156696e0efde3b0845dd6845a8b2d
+*** Element info: {Using=xpath, value=//input[@id='ap_password']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Hello. Sign in')]"}
-  (Session info: chrome=80.0.3987.87)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ap_password']"}
+  (Session info: chrome=80.0.3987.106)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-F6V67VL', ip: '192.168.42.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d264a2727cded1c46b68a2ce48c27cf1
-*** Element info: {Using=xpath, value=//span[contains(text(),'Hello. Sign in')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4a5156696e0efde3b0845dd6845a8b2d
+*** Element info: {Using=xpath, value=//input[@id='ap_password']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -200,21 +124,21 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
 at com.sun.proxy.$Proxy9.findElement(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at com.qa.TestPackage.AmazonLoginPage.AmazonLogin(AmazonLoginPage.java:47)
+at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+at com.qa.TestPackage.AmazonLoginPage.AmazonLogin(AmazonLoginPage.java:50)
 at com.qa.TestCase.AmazonLoginPageTest.ConsumerLogoTest(AmazonLoginPageTest.java:54)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -242,7 +166,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConsumerLogoTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="getResult" is-config="true" duration-ms="472" started-at="2020-02-09T12:21:47Z" finished-at="2020-02-09T12:21:47Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="getResult" is-config="true" duration-ms="535" started-at="2020-02-16T07:04:13Z" finished-at="2020-02-16T07:04:13Z">
           <params>
             <param index="0">
               <value>
@@ -253,11 +177,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="Exit" is-config="true" duration-ms="717" started-at="2020-02-09T12:21:47Z" finished-at="2020-02-09T12:21:48Z">
+        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="Exit" is-config="true" duration-ms="854" started-at="2020-02-16T07:04:13Z" finished-at="2020-02-16T07:04:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Exit -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="endReport" is-config="true" duration-ms="1031" started-at="2020-02-09T12:21:48Z" finished-at="2020-02-09T12:21:49Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@2b2948e2]" name="endReport" is-config="true" duration-ms="798" started-at="2020-02-16T07:04:14Z" finished-at="2020-02-16T07:04:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
