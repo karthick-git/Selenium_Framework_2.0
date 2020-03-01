@@ -28,6 +28,7 @@ public class AmazonLoginPageTest extends BaseClass
 		super();
 	}
 
+	
 	@Test(priority=1,description="Validation of Logo On Amazon Home Page")
 	public void AmazonLogoTest() throws Exception
 	{
@@ -44,6 +45,7 @@ public class AmazonLoginPageTest extends BaseClass
 		String Tittle=Amz.ConsumerPortalGetTittle();
 		Assert.assertEquals(Tittle, "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more");
 		logger.info("Tittle Validated Sucesfully on Amazon Home Page");
+		
 	}
 
 
