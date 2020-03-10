@@ -21,6 +21,12 @@
 		    <artifactId>webdrivermanager</artifactId>
 		    <version>3.8.1</version>
 		</dependency>
+		<!-- https://github.com/extent-framework/extentreports-java -->
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>4.1.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>

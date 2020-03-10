@@ -140,7 +140,7 @@ public class BaseClass
 			//We do pass the path captured by this mehtod in to the extent reports using "logger.addScreenCapture" method. 
 
 			//	String Scrnshot=TakeScreenshot.captuerScreenshot(driver,"TestCaseFailed");
-			String screenshotPath = TakeScreenshot.captuerScreenshot(driver, result.getName());
+			String screenshotPath = TakeScreenshot.captureScreenshot(driver, result.getName());
 			//To add it in the extent report 
 
 			logger1.fail("Test Case Failed Snapshot is below " + logger1.addScreenCaptureFromPath(screenshotPath));

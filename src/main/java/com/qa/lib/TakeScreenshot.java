@@ -13,7 +13,7 @@ public class TakeScreenshot
 {
 	
 
-	public static String captuerScreenshot(WebDriver driver,String screenshotName) throws Exception
+	public static String captureScreenshot(WebDriver driver,String screenshotName) throws Exception
 	{
 	
 			
