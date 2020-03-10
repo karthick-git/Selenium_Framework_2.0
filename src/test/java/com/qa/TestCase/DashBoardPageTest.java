@@ -33,7 +33,7 @@ public class DashBoardPageTest extends BaseClass
 		logger1 = extent.createTest("Footwear Serach on Amzaon Page");
 		Thread.sleep(2000);
 		Dash.FootwearSearch();
-		TakeScreenshot.captuerScreenshot(driver, "FootwearSearch");
+		TakeScreenshot.captureScreenshot(driver, "FootwearSearch");
 
 	}
 
@@ -46,7 +46,7 @@ public class DashBoardPageTest extends BaseClass
 		Assert.assertEquals(Tittle, "International Shopping: Help @ Amazon.com");
 		Dash.CustomerHelpPage();
 		logger.info("Moved to Customer Help Page");
-		TakeScreenshot.captuerScreenshot(driver, "ContactUs");
+		TakeScreenshot.captureScreenshot(driver, "ContactUs");
 
 	}
 	

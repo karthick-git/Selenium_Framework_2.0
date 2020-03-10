@@ -52,7 +52,7 @@ public class WebElementListener implements WebDriverEventListener {
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
 		try {
-			TakeScreenshot.captuerScreenshot(driver,"Exception");
+			TakeScreenshot.captureScreenshot(driver,"Exception");
 		} catch (Exception e) {
 						e.printStackTrace();
 		}

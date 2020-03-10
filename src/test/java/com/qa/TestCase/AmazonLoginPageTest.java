@@ -6,6 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.qa.BaseClass.BaseClass;
 import com.qa.TestPackage.AmazonLoginPage;
 import com.qa.lib.TakeScreenshot;
@@ -24,7 +27,6 @@ public class AmazonLoginPageTest extends BaseClass
 
 	public AmazonLoginPageTest()
 	{
-
 		super();
 	}
 
@@ -35,7 +37,7 @@ public class AmazonLoginPageTest extends BaseClass
 		logger1 = extent.createTest("Validation of Logo On Amazon Home Page");
 		boolean LogTest=Amz.LogoPresent();
 		Assert.assertTrue(LogTest , "Logo is not present in Amazon.com Application");
-		TakeScreenshot.captuerScreenshot(driver, "AmazonLogin");
+		TakeScreenshot.captureScreenshot(driver, "AmazonLogin");
 	}
 
 	@Test(priority=2,description="Validation of Tittle On Amazon Home Page")
@@ -43,21 +45,21 @@ public class AmazonLoginPageTest extends BaseClass
 	{
 		logger1 = extent.createTest("Validation of Tittle On Amazon Home Page");
 		String Tittle=Amz.ConsumerPortalGetTittle();
-		Assert.assertEquals(Tittle, "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more");
+		Assert.assertEquals(Tittle, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		logger.info("Tittle Validated Sucesfully on Amazon Home Page");
 		
 	}
 
-
-	@Test(priority=3,description="Amazon Customer Login Page")
-	public void ConsumerLogoTest() throws Exception
-	{
+	@Test(priority = 3, description = "Amazon Customer Login Page")
+	public void ConsumerLogoTest() throws Exception {
 		logger1 = extent.createTest("Validation of Amazon Customer Login");
 		Amz.AmazonLogin();
 		logger.info("Amazon Customer Login Validation is Sucesfull");
 		Amz.DashboardPage();
-		TakeScreenshot.captuerScreenshot(driver, "DashboardPage");
+		TakeScreenshot.captureScreenshot(driver, "DashboardPage");
 
 	}
-
+	 
+	 
+	 
 }

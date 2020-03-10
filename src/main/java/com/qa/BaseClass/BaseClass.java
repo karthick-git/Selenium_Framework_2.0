@@ -1,5 +1,4 @@
 package com.qa.BaseClass;
-//Sample changes
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,6 +22,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -33,6 +33,8 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.lib.TakeScreenshot;
 import com.qa.lib.WebElementListener;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass
 {
@@ -91,13 +93,11 @@ public class BaseClass
 		String browserName = "Chrome";
 
 		if(browserName.equals("Chrome")){
-			//System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
-			//System.setProperty(prop.getProperty("Chrome_Key"),prop.getProperty("Chrome_Path"));
-			System.setProperty("webdriver.chrome.driver","D:\\Karthick Project\\RecentWork\\Drivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(); 
 			}
 		else if(browserName.equals("FireFox")){
-			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");	
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(); 
 		}
 		else if (browserName.equals("Grid")) {
@@ -108,10 +108,7 @@ public class BaseClass
 			driver = new RemoteWebDriver(new URL(nodeURL), capability);
 		}
 		else if (browserName.equals("Headless")) {
-			//Set the path of the phantomjs.exe file in the properties
-			System.setProperty("phantomjs.binary.path","./Drivers/phantomjs.exe");
-
-			// To declare and initialize PhantomJSDriver
+			WebDriverManager.phantomjs().setup();
 			driver = new PhantomJSDriver();
 		}
 
@@ -143,7 +140,7 @@ public class BaseClass
 			//We do pass the path captured by this mehtod in to the extent reports using "logger.addScreenCapture" method. 
 
 			//	String Scrnshot=TakeScreenshot.captuerScreenshot(driver,"TestCaseFailed");
-			String screenshotPath = TakeScreenshot.captuerScreenshot(driver, result.getName());
+			String screenshotPath = TakeScreenshot.captureScreenshot(driver, result.getName());
 			//To add it in the extent report 
 
 			logger1.fail("Test Case Failed Snapshot is below " + logger1.addScreenCaptureFromPath(screenshotPath));

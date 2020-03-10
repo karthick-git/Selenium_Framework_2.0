@@ -31,7 +31,7 @@ public class CustomerHelpPageTest extends BaseClass
 		logger1 = extent.createTest("Validation of Amazon Customer Login");
 		Cus.MouseHoverDept();
 		Thread.sleep(5000);
-		TakeScreenshot.captuerScreenshot(driver, "MouseHovertoDept");
+		TakeScreenshot.captureScreenshot(driver, "MouseHovertoDept");
 		
 	}
 	
