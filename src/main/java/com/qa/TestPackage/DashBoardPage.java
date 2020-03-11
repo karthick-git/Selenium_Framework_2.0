@@ -39,7 +39,7 @@ public class DashBoardPage extends BaseClass
 		for (WebElement result:footwearList)
 		{
 			System.out.println("Result of Footwear Search is========");
-			logger.info(result.getText());     
+			//logger.info(result.getText());     
 			System.out.println("=====================");
 
 		}

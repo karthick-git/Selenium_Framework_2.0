@@ -7,8 +7,14 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+//The below 2 import statements are used in case of log4j2
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+//The below 2 import statements are used in case of log4j
+//import org.apache.log4j.Logger;
+//import org.apache.log4j.PropertyConfigurator;
+
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,7 +62,7 @@ public class BaseClass
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/STMExtentReport1.html");
 		extent = new ExtentReports ();
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Application Name", "First Cry");
+		extent.setSystemInfo("Application Name", "Amazon");
 		extent.setSystemInfo("User Name", "Shishimaru");
 		extent.setSystemInfo("Envirnoment", "Production");
 
@@ -71,11 +77,16 @@ public class BaseClass
 	{
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/"
-					+ "/qa/Config/Conf.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/resources/"
+					+ "Conf.properties");
 			prop.load(ip);
-			logger=Logger.getLogger("Sample");
-			PropertyConfigurator.configure(".\\src\\main\\java\\com\\qa\\Config\\log4j.properties");
+			
+			//Use the below 2 lines in case of using log4j
+			//logger=Logger.getLogger("BaseClass");
+			//PropertyConfigurator.configure(".\\src\\main\\resources\\log4j2.properties");
+			
+			//The below line is used in case of log4j2
+			logger=LogManager.getLogger(BaseClass.class);
 		} 
 		catch (FileNotFoundException e) 
 		{
@@ -89,8 +100,7 @@ public class BaseClass
 
 	public static void initialization() throws MalformedURLException
 	{
-		//String browserName = prop.getProperty("browser");
-		String browserName = "Chrome";
+		String browserName = prop.getProperty("Browser");
 
 		if(browserName.equals("Chrome")){
 			WebDriverManager.chromedriver().setup();

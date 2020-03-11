@@ -45,7 +45,7 @@ public class DashBoardPageTest extends BaseClass
 		String Tittle=Dash.ContactUsTittleValidation();
 		Assert.assertEquals(Tittle, "International Shopping: Help @ Amazon.com");
 		Dash.CustomerHelpPage();
-		logger.info("Moved to Customer Help Page");
+		//logger.info("Moved to Customer Help Page");
 		TakeScreenshot.captureScreenshot(driver, "ContactUs");
 
 	}

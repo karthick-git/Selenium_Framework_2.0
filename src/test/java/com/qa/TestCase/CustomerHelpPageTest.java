@@ -40,7 +40,7 @@ public class CustomerHelpPageTest extends BaseClass
 	{
 		logger1 = extent.createTest("Validation of Amazon Customer Logout Functionality");
 		Cus.AmazonLogout();
-		logger.info("Sucesfully logout from Amazon");
+		//logger.info("Sucesfully logout from Amazon");
 		
 		
 	}

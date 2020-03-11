@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.TestCase.AmazonLoginPageTest">
         <methods>
-          <include name="ConsumerPortalTittle"/>
+          <include name="ConsumerLogoTest"/>
           <include name="getResult"/>
           <include name="Exit"/>
           <include name="ReportSetup"/>
