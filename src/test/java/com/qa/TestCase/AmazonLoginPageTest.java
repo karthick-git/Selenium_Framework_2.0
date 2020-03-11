@@ -11,44 +11,40 @@ import com.qa.BaseClass.BaseClass;
 import com.qa.TestPackage.AmazonLoginPage;
 import com.qa.lib.TakeScreenshot;
 
-public class AmazonLoginPageTest extends BaseClass
-{
+public class AmazonLoginPageTest extends BaseClass {
 
 	AmazonLoginPage Amz;
+
 	@BeforeSuite
-	public void setup() throws MalformedURLException
-	{
+	public void setup() throws MalformedURLException {
 		initialization();
-		Amz=new AmazonLoginPage();
+		Amz = new AmazonLoginPage();
 		logger = LogManager.getLogger(AmazonLoginPageTest.class);
 		logger.info(this.getClass().getSimpleName());
 	}
 
-	public AmazonLoginPageTest()
-	{
+	public AmazonLoginPageTest() {
 		super();
 	}
 
-	
-	@Test(priority=1,description="Validation of Logo On Amazon Home Page")
-	public void AmazonLogoTest() throws Exception
-	{
+	@Test(priority = 1, description = "Validation of Logo On Amazon Home Page")
+	public void AmazonLogoTest() throws Exception {
 		logger1 = extent.createTest("Validation of Logo On Amazon Home Page");
 		logger.debug("Validation of Logo On Amazon Home Page");
-		boolean LogTest=Amz.LogoPresent();
-		Assert.assertTrue(LogTest , "Logo is not present in Amazon.com Application");
+		boolean LogTest = Amz.LogoPresent();
+		Assert.assertTrue(LogTest, "Logo is not present in Amazon.com Application");
 		TakeScreenshot.captureScreenshot(driver, "AmazonLogin");
 	}
 
-	@Test(priority=2,description="Validation of Title On Amazon Home Page")
-	public void ConsumerPortalTittle()
-	{
+	@Test(priority = 2, description = "Validation of Title On Amazon Home Page")
+	public void ConsumerPortalTittle() {
 		logger1 = extent.createTest("Validation of Title On Amazon Home Page");
 		logger.debug("Validation of Title On Amazon Home Page");
-		String Tittle=Amz.ConsumerPortalGetTittle();
-		Assert.assertEquals(Tittle, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
+		String Tittle = Amz.ConsumerPortalGetTittle();
+		Assert.assertEquals(Tittle,
+				"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		logger.info("Title Validated Succesfully on Amazon Home Page");
-		
+
 	}
 
 	@Test(priority = 3, description = "Amazon Customer Login Page")
@@ -61,7 +57,5 @@ public class AmazonLoginPageTest extends BaseClass
 		TakeScreenshot.captureScreenshot(driver, "DashboardPage");
 
 	}
-	 
-	 
-	 
+
 }

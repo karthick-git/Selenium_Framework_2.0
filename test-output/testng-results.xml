@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5118" started-at="2020-03-11T15:28:31 IST" finished-at="2020-03-11T15:28:36 IST">
+  <suite name="Suite" duration-ms="2636" started-at="2020-03-11T16:31:19 IST" finished-at="2020-03-11T16:31:21 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5118" started-at="2020-03-11T15:28:31 IST" finished-at="2020-03-11T15:28:36 IST">
+    <test name="Test" duration-ms="2636" started-at="2020-03-11T16:31:19 IST" finished-at="2020-03-11T16:31:21 IST">
       <class name="com.qa.TestCase.AmazonLoginPageTest">
-        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="ReportSetup" is-config="true" duration-ms="116" started-at="2020-03-11T15:28:12 IST" finished-at="2020-03-11T15:28:12 IST">
+        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="ReportSetup" is-config="true" duration-ms="127" started-at="2020-03-11T16:30:57 IST" finished-at="2020-03-11T16:30:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="setup" is-config="true" duration-ms="18908" started-at="2020-03-11T15:28:12 IST" depends-on-methods="com.qa.BaseClass.BaseClass.ReportSetup" finished-at="2020-03-11T15:28:31 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="setup" is-config="true" duration-ms="21269" started-at="2020-03-11T16:30:57 IST" depends-on-methods="com.qa.BaseClass.BaseClass.ReportSetup" finished-at="2020-03-11T16:31:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AmazonLogoTest()[pri:1, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="AmazonLogoTest" duration-ms="3949" started-at="2020-03-11T15:28:31 IST" description="Validation of Logo On Amazon Home Page" finished-at="2020-03-11T15:28:35 IST">
+        <test-method status="PASS" signature="AmazonLogoTest()[pri:1, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="AmazonLogoTest" duration-ms="1350" started-at="2020-03-11T16:31:19 IST" description="Validation of Logo On Amazon Home Page" finished-at="2020-03-11T16:31:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmazonLogoTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="getResult" is-config="true" duration-ms="20" started-at="2020-03-11T15:28:35 IST" finished-at="2020-03-11T15:28:35 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="getResult" is-config="true" duration-ms="11" started-at="2020-03-11T16:31:20 IST" finished-at="2020-03-11T16:31:20 IST">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="ConsumerPortalTittle()[pri:2, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="ConsumerPortalTittle" duration-ms="15" started-at="2020-03-11T15:28:35 IST" description="Validation of Title On Amazon Home Page" finished-at="2020-03-11T15:28:35 IST">
+        <test-method status="PASS" signature="ConsumerPortalTittle()[pri:2, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="ConsumerPortalTittle" duration-ms="11" started-at="2020-03-11T16:31:20 IST" description="Validation of Title On Amazon Home Page" finished-at="2020-03-11T16:31:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConsumerPortalTittle -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="getResult" is-config="true" duration-ms="1" started-at="2020-03-11T15:28:35 IST" finished-at="2020-03-11T15:28:35 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-11T16:31:20 IST" finished-at="2020-03-11T16:31:20 IST">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="Exit" is-config="true" duration-ms="1049" started-at="2020-03-11T15:28:35 IST" finished-at="2020-03-11T15:28:36 IST">
+        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="Exit" is-config="true" duration-ms="1207" started-at="2020-03-11T16:31:20 IST" finished-at="2020-03-11T16:31:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Exit -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="endReport" is-config="true" duration-ms="324" started-at="2020-03-11T15:28:36 IST" finished-at="2020-03-11T15:28:37 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.AmazonLoginPageTest@4ec4f3a0]" name="endReport" is-config="true" duration-ms="408" started-at="2020-03-11T16:31:21 IST" finished-at="2020-03-11T16:31:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

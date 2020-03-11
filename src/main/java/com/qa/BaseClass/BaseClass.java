@@ -102,22 +102,22 @@ public class BaseClass
 	{
 		String browserName = prop.getProperty("Browser");
 
-		if(browserName.equals("Chrome")){
+		if(browserName.equalsIgnoreCase("Chrome")){
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(); 
 			}
-		else if(browserName.equals("FireFox")){
+		else if(browserName.equalsIgnoreCase("FireFox")){
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(); 
 		}
-		else if (browserName.equals("Grid")) {
+		else if (browserName.equalsIgnoreCase("Grid")) {
 			nodeURL = "http://10.50.88.59:4444/wd/hub";
 			DesiredCapabilities capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
 			capability.setPlatform(Platform.WINDOWS);
 			driver = new RemoteWebDriver(new URL(nodeURL), capability);
 		}
-		else if (browserName.equals("Headless")) {
+		else if (browserName.equalsIgnoreCase("Headless")) {
 			WebDriverManager.phantomjs().setup();
 			driver = new PhantomJSDriver();
 		}
