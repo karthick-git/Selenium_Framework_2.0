@@ -1,5 +1,6 @@
-target/
-Screenshot/
-test-output/
+target/*
+Screenshot/*
+test-output/*
 .settings/
-log/
+log/*
+/target/
