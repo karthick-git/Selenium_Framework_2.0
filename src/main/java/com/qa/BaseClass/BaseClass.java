@@ -1,14 +1,24 @@
 package com.qa.BaseClass;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+//The below 2 import statements are used in case of log4j2
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFRun;
+
+//The below 2 import statements are used in case of log4j
+//import org.apache.log4j.Logger;
+//import org.apache.log4j.PropertyConfigurator;
+
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -48,6 +58,11 @@ public class BaseClass
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	static String nodeURL;
+	
+	public static XWPFDocument docx;
+	public static FileOutputStream out;
+	public static InputStream pic;
+	public static XWPFRun run;	
 
 	@BeforeSuite
 
@@ -56,7 +71,7 @@ public class BaseClass
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/STMExtentReport1.html");
 		extent = new ExtentReports ();
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Application Name", "First Cry");
+		extent.setSystemInfo("Application Name", "Amazon");
 		extent.setSystemInfo("User Name", "Shishimaru");
 		extent.setSystemInfo("Envirnoment", "Production");
 
@@ -71,11 +86,16 @@ public class BaseClass
 	{
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/"
-					+ "/qa/Config/Conf.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/resources/"
+					+ "Conf.properties");
 			prop.load(ip);
-			logger=Logger.getLogger("Sample");
-			PropertyConfigurator.configure(".\\src\\main\\java\\com\\qa\\Config\\log4j.properties");
+			
+			//Use the below 2 lines in case of using log4j
+			//logger=Logger.getLogger("BaseClass");
+			//PropertyConfigurator.configure(".\\src\\main\\resources\\log4j2.properties");
+			
+			//The below line is used in case of log4j2
+			logger=LogManager.getLogger(BaseClass.class);
 		} 
 		catch (FileNotFoundException e) 
 		{
@@ -89,25 +109,24 @@ public class BaseClass
 
 	public static void initialization() throws MalformedURLException
 	{
-		//String browserName = prop.getProperty("browser");
-		String browserName = "Chrome";
+		String browserName = prop.getProperty("Browser");
 
-		if(browserName.equals("Chrome")){
+		if(browserName.equalsIgnoreCase("Chrome")){
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(); 
 			}
-		else if(browserName.equals("FireFox")){
+		else if(browserName.equalsIgnoreCase("FireFox")){
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(); 
 		}
-		else if (browserName.equals("Grid")) {
+		else if (browserName.equalsIgnoreCase("Grid")) {
 			nodeURL = "http://10.50.88.59:4444/wd/hub";
 			DesiredCapabilities capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
 			capability.setPlatform(Platform.WINDOWS);
 			driver = new RemoteWebDriver(new URL(nodeURL), capability);
 		}
-		else if (browserName.equals("Headless")) {
+		else if (browserName.equalsIgnoreCase("Headless")) {
 			WebDriverManager.phantomjs().setup();
 			driver = new PhantomJSDriver();
 		}
