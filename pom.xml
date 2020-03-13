@@ -125,8 +125,14 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.2</version>
 		</dependency>
-
+		<!-- Applitools SDK -->
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-selenium-java3</artifactId>
+			<version>3.160.2</version>
+		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -140,9 +146,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- ... -->
-					<!-- <archive> <manifest> <mainClass>com.ril.Feedzai.BaseClass.feedzai_AM_Login</mainClass> 
-						</manifest> </archive> -->
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
@@ -154,6 +157,9 @@
 				<version>2.21.0</version>
 				<configuration>
 					<suiteXmlFiles>
+						<!-- The below line can be uncommented to pass the testng file name 
+							at runtime during commandline execution -->
+						<!--<suiteXmlFile>{testngFile}</suiteXmlFile> -->
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>

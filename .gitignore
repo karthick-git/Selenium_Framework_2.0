@@ -1,0 +1,6 @@
+target/*
+Screenshot/*
+test-output/*
+.settings/
+log/*
+test-output/Suite/*

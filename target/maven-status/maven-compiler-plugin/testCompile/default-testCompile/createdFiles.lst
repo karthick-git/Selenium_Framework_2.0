@@ -1,0 +1,4 @@
+com\qa\TestCase\PractiseTestCase.class
+com\qa\TestCase\DashBoardPageTest.class
+com\qa\TestCase\AmazonLoginPageTest.class
+com\qa\TestCase\CustomerHelpPageTest.class
