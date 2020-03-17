@@ -11,6 +11,14 @@ import com.qa.BaseClass.BaseClass;
 import com.qa.TestPackage.AmazonLoginPage;
 import com.qa.lib.TakeScreenshot;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 public class AmazonLoginPageTest extends BaseClass {
 
 	AmazonLoginPage Amz;
@@ -28,6 +36,12 @@ public class AmazonLoginPageTest extends BaseClass {
 	}
 
 	@Test(priority = 1, description = "Validation of Logo On Amazon Home Page")
+	@Description("Validation of Logo On Amazon Home Page-Allure Description")
+	@Epic("Amazon Application Validation")
+	@Feature("Amazon Home Page Validation")
+	@Story("Home page Logo Validation")
+	@Step("Logo Validation") 
+	@Severity(SeverityLevel.TRIVIAL)
 	public void AmazonLogoTest() throws Exception {
 		logger1 = extent.createTest("Validation of Logo On Amazon Home Page");
 		logger.debug("Validation of Logo On Amazon Home Page");
