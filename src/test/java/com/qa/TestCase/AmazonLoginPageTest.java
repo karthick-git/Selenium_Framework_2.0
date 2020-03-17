@@ -47,15 +47,15 @@ public class AmazonLoginPageTest extends BaseClass {
 
 	}
 
-	@Test(priority = 3, description = "Amazon Customer Login Page")
-	public void ConsumerLogoTest() throws Exception {
-		logger1 = extent.createTest("Validation of Amazon Customer Login");
-		logger.debug("Validation of Amazon Customer Login");
-		Amz.AmazonLogin();
-		logger.info("Amazon Customer Login Validation is Succesfull");
-		Amz.DashboardPage();
-		TakeScreenshot.captureScreenshot(driver, "DashboardPage");
-
-	}
-
+	/*
+	 * @Test(priority = 3, description = "Amazon Customer Login Page") public void
+	 * ConsumerLogoTest() throws Exception { logger1 =
+	 * extent.createTest("Validation of Amazon Customer Login");
+	 * logger.debug("Validation of Amazon Customer Login"); Amz.AmazonLogin();
+	 * logger.info("Amazon Customer Login Validation is Succesfull");
+	 * Amz.DashboardPage(); TakeScreenshot.captureScreenshot(driver,
+	 * "DashboardPage");
+	 * 
+	 * }
+	 */
 }
