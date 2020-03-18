@@ -19,6 +19,9 @@ public class AmazonLoginPage extends BaseClass
 	@FindBy(xpath="//input[@id='ap_email']")
 	WebElement Email;
 	
+	@FindBy(xpath="//span[@id='continue']")
+	WebElement Continue;
+	
 	@FindBy(xpath="//input[@id='ap_password']")
 	WebElement Password;
 	
@@ -30,29 +33,33 @@ public class AmazonLoginPage extends BaseClass
 	PageFactory.initElements(driver, this);	
 	}
 	
-	public boolean LogoPresent()
+	public boolean isLogoPresent()
 	{
 		return Logo.isDisplayed();
 		
 	}
-	public String ConsumerPortalGetTittle()
+	public String getTitleConsumerPortal()
 	{
 		return driver.getTitle();
 		
 	}
 	
-	public void AmazonLogin() throws InterruptedException
-	{
-		
+	public void goToAmazonLoginPage() {
 		HelloSignin.click();
+	}
+	
+	public void doAmazonLogin(String email, String password) throws InterruptedException
+	{
 		Thread.sleep(1000);
-		Email.sendKeys("");
-		Password.sendKeys("");
+		Email.sendKeys(email);
+		Continue.click();
+		Thread.sleep(2000);
+		Password.sendKeys(password);
 		SigninButton.click();
 		
 	}
 	
-	public DashBoardPage DashboardPage()
+	public DashBoardPage returnDashboardPage()
 	{
 		return new DashBoardPage();
 		

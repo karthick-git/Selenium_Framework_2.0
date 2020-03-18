@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import com.qa.BaseClass.BaseClass;
 import com.qa.TestPackage.AmazonLoginPage;
 import com.qa.lib.TakeScreenshot;
+import com.qa.utils.CsvUtils;
+import com.qa.utils.ExcelUtils;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -45,7 +47,7 @@ public class AmazonLoginPageTest extends BaseClass {
 	public void AmazonLogoTest() throws Exception {
 		logger1 = extent.createTest("Validation of Logo On Amazon Home Page");
 		logger.debug("Validation of Logo On Amazon Home Page");
-		boolean LogTest = Amz.LogoPresent();
+		boolean LogTest = Amz.isLogoPresent();
 		Assert.assertTrue(LogTest, "Logo is not present in Amazon.com Application");
 		TakeScreenshot.captureScreenshot(driver, "AmazonLogin");
 	}
@@ -54,22 +56,23 @@ public class AmazonLoginPageTest extends BaseClass {
 	public void ConsumerPortalTittle() {
 		logger1 = extent.createTest("Validation of Title On Amazon Home Page");
 		logger.debug("Validation of Title On Amazon Home Page");
-		String Tittle = Amz.ConsumerPortalGetTittle();
+		String Tittle = Amz.getTitleConsumerPortal();
 		Assert.assertEquals(Tittle,
 				"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		logger.info("Title Validated Succesfully on Amazon Home Page");
 
 	}
 
-	/*
-	 * @Test(priority = 3, description = "Amazon Customer Login Page") public void
-	 * ConsumerLogoTest() throws Exception { logger1 =
-	 * extent.createTest("Validation of Amazon Customer Login");
-	 * logger.debug("Validation of Amazon Customer Login"); Amz.AmazonLogin();
-	 * logger.info("Amazon Customer Login Validation is Succesfull");
-	 * Amz.DashboardPage(); TakeScreenshot.captureScreenshot(driver,
-	 * "DashboardPage");
-	 * 
-	 * }
-	 */
+	
+	@Test(priority = 3, description = "Amazon Customer Login Page")
+	public void ConsumerLoginTest() throws Exception {
+		logger1 = extent.createTest("Validation of Amazon Customer Login");
+		logger.debug("Validation of Amazon Customer Login");
+		Amz.goToAmazonLoginPage();
+		CsvUtils.csv(ExcelUtils.getTestCaseName(this.toString()));
+		logger.info("Amazon Customer Login Validation is Succesfull");
+		TakeScreenshot.captureScreenshot(driver, "DashboardPage");
+
+	}
+	 
 }

@@ -1,0 +1,3 @@
+stestcasename,username,password
+AmazonLoginPageTest,admin@abc.com,admin
+ExcelDataProvider,admin@abc.com,password

@@ -10,12 +10,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtils {
 
 	public static Properties prop;
-	static XSSFWorkbook workbook;
-	static XSSFSheet sheet;
+	public static XSSFWorkbook workbook;
+	public static XSSFSheet sheet;
 
 	public ExcelUtils() {
 		try {
 			workbook = new XSSFWorkbook(prop.getProperty("excelFilePath"));
+			System.out.println(prop.getProperty("excelFilePath"));
 			sheet = workbook.getSheet(prop.getProperty("sheetName"));
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not read the Excel sheet, File Not found exception");
