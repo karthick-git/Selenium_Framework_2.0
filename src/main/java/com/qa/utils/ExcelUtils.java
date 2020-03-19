@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 
 import com.qa.BaseClass.BaseClass;
 
@@ -12,12 +13,13 @@ public class ExcelUtils extends BaseClass {
 
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet sheet;
+	public static String username;
+	public static String password;
 
 	public ExcelUtils() {
 		super();
 		try {
 			workbook = new XSSFWorkbook(prop.getProperty("excelFilePath"));
-			System.out.println(prop.getProperty("excelFilePath"));
 			sheet = workbook.getSheet(prop.getProperty("sheetName"));
 		} catch (FileNotFoundException e) {
 			System.out.println("Could not read the Excel sheet, File Not found exception");
@@ -129,6 +131,27 @@ public class ExcelUtils extends BaseClass {
 			throw(e);		
 		}
 	}
+	
+	public static int getRowContains(String sTestCaseName) throws Exception
+	{
+		int i;
+		try 
+		{
+			int rowCount = ExcelUtils.getRowUsed();
+			for ( i=0 ; i<=rowCount; i++)
+			{
+				if(ExcelUtils.getCellDataString(i,0).equalsIgnoreCase(sTestCaseName))
+				{				
+					break;
+				}
+			}
+			return i;
+				
+		}catch (Exception e)
+		{
+			throw(e);		
+		}
+	}
 
 	public static int getRowUsed() throws Exception 
 	{
@@ -142,5 +165,29 @@ public class ExcelUtils extends BaseClass {
 			throw (e);
 		}
 
+	}
+	
+	public static void excelLogin(String sTestCaseName) throws Exception {
+		int i;
+		try 
+		{
+			int rowCount = ExcelUtils.getRowUsed();
+			for ( i=0 ; i<=rowCount; i++)
+			{
+				if(ExcelUtils.getCellDataString(i,0).equalsIgnoreCase(sTestCaseName))
+				{				
+					username = ExcelUtils.getCellDataString(i, 1);
+					password = ExcelUtils.getCellDataString(i, 2);
+					System.out.println(username+" | "+password);
+					driver.findElement(By.id("txtUsername")).sendKeys(username);
+					driver.findElement(By.id("txtPassword")).sendKeys(password);
+					Thread.sleep(2000);
+				}
+			}
+				
+		}catch (Exception e)
+		{
+			throw(e);		
+		}
 	}
 }

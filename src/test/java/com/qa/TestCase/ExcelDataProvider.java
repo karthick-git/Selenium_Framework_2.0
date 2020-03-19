@@ -1,7 +1,5 @@
 package com.qa.TestCase;
 
-import java.net.MalformedURLException;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -15,21 +13,28 @@ import com.qa.utils.ExcelUtils;
 
 public class ExcelDataProvider extends BaseClass {
 	ExcelUtils excelUtils;
+	public int iTestCaseRow;
+	private String sTestCaseName;
 	
 	@BeforeTest
-	public void setUpTest() throws MalformedURLException {
+	public void setUpTest() throws Exception {
 		initialization();
 		logger = LogManager.getLogger(ExcelDataProvider.class);
 		logger.info(this.getClass().getSimpleName());
 		excelUtils = new ExcelUtils();
+		sTestCaseName = ExcelUtils.getTestCaseName(this.toString());
+		iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName);
+		System.out.println("Row containing test Scenario in the sheet is " + iTestCaseRow);
 	}
 	
 	@Test(dataProvider="test1data")
 	public void test1(String username, String password) throws Exception {
+		logger1 = extent.createTest("Validation of OrangeHRM Login");
 		System.out.println(username+" | "+password);
 		driver.findElement(By.id("txtUsername")).sendKeys(username);
 		driver.findElement(By.id("txtPassword")).sendKeys(password);
 		Thread.sleep(2000);
+		logger1.info("Login Successful - OrangeHRM");
 	}
 
 	@DataProvider(name = "test1data")
