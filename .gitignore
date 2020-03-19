@@ -1,0 +1,10 @@
+target/*
+Screenshot/*
+test-output/*
+test-output/Default suite/*
+test-output/junitreports/*
+test-output/old/*
+test-output/Suite/*
+.settings/
+log/*
+allure-results/*

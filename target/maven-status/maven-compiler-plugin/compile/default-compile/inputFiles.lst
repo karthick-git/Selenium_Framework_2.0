@@ -1,9 +1,11 @@
-D:\Karthick Project\RecentWork\src\main\java\com\qa\lib\RetryFailedTestCases.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\BaseClass\BaseClass.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\lib\RetryListenerClass.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\TestPackage\CustomerHelpPage.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\lib\ListnerImpl.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\lib\TakeScreenshot.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\TestPackage\DashBoardPage.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\lib\WebElementListener.java
-D:\Karthick Project\RecentWork\src\main\java\com\qa\TestPackage\AmazonLoginPage.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\lib\CommonFunctions.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\lib\ListnerImpl.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\lib\RetryListenerClass.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\lib\WebElementListener.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\TestPackage\AmazonLoginPage.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\utils\ExcelUtils.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\BaseClass\BaseClass.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\lib\TakeScreenshot.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\TestPackage\CustomerHelpPage.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\lib\RetryFailedTestCases.java
+C:\Karthick\GitProjects\Selenium_Framework_2.0\src\main\java\com\qa\TestPackage\DashBoardPage.java

@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.qa.lib.RetryListenerClass"/>
-    <listener class-name="com.qa.lib.ListnerImpl"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestCase.AmazonLoginPageTest">
+      <class name="com.qa.TestCase.ExcelDataProvider">
         <methods>
-          <include name="ConsumerPortalTittle"/>
+          <include name="setUpTest"/>
+          <include name="test1" invocation-numbers="0 1 2 3 4 5 6"/>
           <include name="getResult"/>
-          <include name="AmazonLogoTest"/>
           <include name="Exit"/>
           <include name="ReportSetup"/>
-          <include name="setup"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.qa.TestCase.AmazonLoginPageTest -->
+      </class> <!-- com.qa.TestCase.ExcelDataProvider -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
