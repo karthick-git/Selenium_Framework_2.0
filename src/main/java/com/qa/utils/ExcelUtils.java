@@ -2,18 +2,19 @@ package com.qa.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Properties;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelUtils {
+import com.qa.BaseClass.BaseClass;
 
-	public static Properties prop;
+public class ExcelUtils extends BaseClass {
+
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet sheet;
 
 	public ExcelUtils() {
+		super();
 		try {
 			workbook = new XSSFWorkbook(prop.getProperty("excelFilePath"));
 			System.out.println(prop.getProperty("excelFilePath"));
