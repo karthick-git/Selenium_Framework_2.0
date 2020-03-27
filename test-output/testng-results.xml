@@ -1,44 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36608" started-at="2020-03-19T11:58:34 IST" finished-at="2020-03-19T11:59:11 IST">
+  <suite name="Default suite" duration-ms="375" started-at="2020-03-26T10:44:11 IST" finished-at="2020-03-26T10:44:11 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36608" started-at="2020-03-19T11:58:34 IST" finished-at="2020-03-19T11:59:11 IST">
-      <class name="com.qa.TestCase.OrangeHRMLoginTest">
-        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4]" name="ReportSetup" is-config="true" duration-ms="224" started-at="2020-03-19T11:58:34 IST" finished-at="2020-03-19T11:58:34 IST">
+    <test name="Default test" duration-ms="375" started-at="2020-03-26T10:44:11 IST" finished-at="2020-03-26T10:44:11 IST">
+      <class name="com.qa.TestCase.TestNgPriority">
+        <test-method status="PASS" signature="test0()[pri:-1, instance:com.qa.TestCase.TestNgPriority@3e92efc3]" name="test0" duration-ms="137" started-at="2020-03-26T10:44:11 IST" finished-at="2020-03-26T10:44:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ReportSetup -->
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4]" name="setUpTest" is-config="true" duration-ms="33060" started-at="2020-03-19T11:58:34 IST" finished-at="2020-03-19T11:59:08 IST">
+        </test-method> <!-- test0 -->
+        <test-method status="PASS" signature="test2()[pri:-1, instance:com.qa.TestCase.TestNgPriority@3e92efc3]" name="test2" duration-ms="4" started-at="2020-03-26T10:44:11 IST" finished-at="2020-03-26T10:44:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4]" name="test1" duration-ms="2400" started-at="2020-03-19T11:59:08 IST" finished-at="2020-03-19T11:59:10 IST">
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test1()[pri:2, instance:com.qa.TestCase.TestNgPriority@3e92efc3]" name="test1" duration-ms="5" started-at="2020-03-26T10:44:11 IST" finished-at="2020-03-26T10:44:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4]" name="getResult" is-config="true" duration-ms="5" started-at="2020-03-19T11:59:10 IST" finished-at="2020-03-19T11:59:10 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=OrangeHRMLoginTest.test1()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4]" name="Exit" is-config="true" duration-ms="955" started-at="2020-03-19T11:59:10 IST" finished-at="2020-03-19T11:59:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Exit -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@25ce9dc4]" name="endReport" is-config="true" duration-ms="751" started-at="2020-03-19T11:59:11 IST" finished-at="2020-03-19T11:59:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- com.qa.TestCase.OrangeHRMLoginTest -->
+      </class> <!-- com.qa.TestCase.TestNgPriority -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
