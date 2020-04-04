@@ -3,18 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestCase.AmazonLoginPageTest">
+      <class name="com.qa.TestCase.MercuryRegister">
         <methods>
-          <include name="ConsumerPortalTittle"/>
           <include name="getResult"/>
-          <include name="ConsumerLoginTest"/>
-          <include name="AmazonLogoTest"/>
+          <include name="userRegistration" invocation-numbers="0 1"/>
+          <include name="setup"/>
           <include name="Exit"/>
           <include name="ReportSetup"/>
-          <include name="setup"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.qa.TestCase.AmazonLoginPageTest -->
+      </class> <!-- com.qa.TestCase.MercuryRegister -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
