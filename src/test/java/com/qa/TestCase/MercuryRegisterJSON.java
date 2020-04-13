@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import com.qa.BaseClass.BaseClass;
 import com.qa.utils.JsonReader;
 
-public class MercuryRegister extends BaseClass {
+public class MercuryRegisterJSON extends BaseClass {
 
 	/*
 	 * @FindBy(xpath = "//input[@name='firstName']") static WebElement FName;
@@ -45,7 +45,7 @@ public class MercuryRegister extends BaseClass {
 	 * 
 	 * @FindBy(xpath = "//input[@name='register']") static WebElement Submit;
 	 */
-	public MercuryRegister() {
+	public MercuryRegisterJSON() {
 		super();
 		//PageFactory.initElements(driver, this);
 	}
@@ -53,7 +53,7 @@ public class MercuryRegister extends BaseClass {
 	@BeforeSuite
 	public void setup() throws MalformedURLException {
 		initialization();
-		logger = LogManager.getLogger(MercuryRegister.class);
+		logger = LogManager.getLogger(MercuryRegisterJSON.class);
 		logger.info(this.getClass().getSimpleName());
 	}
 

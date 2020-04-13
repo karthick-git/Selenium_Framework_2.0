@@ -117,7 +117,7 @@
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
+			<version>1.1.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax.json/javax.json-api -->
 		<dependency>
@@ -144,6 +144,30 @@
 			<version>1.7.30</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.26</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion-DataProviders 
+		<dependency>
+			<groupId>com.paypal.selion</groupId>
+			<artifactId>SeLion-DataProviders</artifactId>
+			<version>1.2.0</version>
+		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion-Common 
+		<dependency>
+			<groupId>com.paypal.selion</groupId>
+			<artifactId>SeLion-Common</artifactId>
+			<version>1.2.0</version>
+		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion
+		<dependency>
+			<groupId>com.paypal.selion</groupId>
+			<artifactId>SeLion</artifactId>
+			<version>1.2.0</version>
+		</dependency> -->
 
 	</dependencies>
 

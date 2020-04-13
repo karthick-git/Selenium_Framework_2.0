@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -22,6 +23,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -113,7 +115,12 @@ public class BaseClass
 
 		if(browserName.equalsIgnoreCase("Chrome")){
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(); 
+			
+			//To disable the chrome notification saying "Chrome is being controlled by Automated test software"
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.setExperimentalOption("useAutomationExtension", false);
+			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+			driver = new ChromeDriver(chromeOptions);
 			}
 		else if(browserName.equalsIgnoreCase("FireFox")){
 			WebDriverManager.firefoxdriver().setup();

@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestCase.MercuryRegister">
+      <class name="com.qa.TestCase.OrangeHRMLoginTest">
         <methods>
+          <include name="test1"/>
+          <include name="setUpTest"/>
           <include name="getResult"/>
-          <include name="userRegistration" invocation-numbers="0 1"/>
-          <include name="setup"/>
           <include name="Exit"/>
           <include name="ReportSetup"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.qa.TestCase.MercuryRegister -->
+      </class> <!-- com.qa.TestCase.OrangeHRMLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,183 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11825" started-at="2020-04-04T13:22:20 IST" finished-at="2020-04-04T13:22:31 IST">
+  <suite name="Default suite" duration-ms="40748" started-at="2020-04-13T10:14:57 IST" finished-at="2020-04-13T10:15:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11825" started-at="2020-04-04T13:22:20 IST" finished-at="2020-04-04T13:22:31 IST">
-      <class name="com.qa.TestCase.MercuryRegister">
-        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="ReportSetup" is-config="true" duration-ms="80" started-at="2020-04-04T13:22:05 IST" finished-at="2020-04-04T13:22:05 IST">
+    <test name="Default test" duration-ms="40748" started-at="2020-04-13T10:14:57 IST" finished-at="2020-04-13T10:15:38 IST">
+      <class name="com.qa.TestCase.OrangeHRMLoginTest">
+        <test-method status="PASS" signature="ReportSetup()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a]" name="ReportSetup" is-config="true" duration-ms="132" started-at="2020-04-13T10:14:57 IST" finished-at="2020-04-13T10:14:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="setup" is-config="true" duration-ms="14519" started-at="2020-04-04T13:22:05 IST" depends-on-methods="com.qa.BaseClass.BaseClass.ReportSetup" finished-at="2020-04-04T13:22:20 IST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a]" name="setUpTest" is-config="true" duration-ms="37086" started-at="2020-04-13T10:14:57 IST" finished-at="2020-04-13T10:15:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="userRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="userRegistration" duration-ms="5274" started-at="2020-04-04T13:22:20 IST" data-provider="registration data" finished-at="2020-04-04T13:22:25 IST">
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a]" name="test1" duration-ms="2339" started-at="2020-04-13T10:15:34 IST" finished-at="2020-04-13T10:15:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a]" name="getResult" is-config="true" duration-ms="7" started-at="2020-04-13T10:15:37 IST" finished-at="2020-04-13T10:15:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Aditya Kumar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Roy]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[7589698874]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[aditya@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[337 pentagan street]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Amstalveen]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[North Holland]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[11801189]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[NETHERLANDS]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Aditya@74]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Test12345]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Test12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userRegistration -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="getResult" is-config="true" duration-ms="7" started-at="2020-04-04T13:22:25 IST" finished-at="2020-04-04T13:22:25 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userRegistration status=SUCCESS method=MercuryRegister.userRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a] output={null}]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=OrangeHRMLoginTest.test1()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="userRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="userRegistration" duration-ms="5286" started-at="2020-04-04T13:22:25 IST" data-provider="registration data" finished-at="2020-04-04T13:22:30 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Preety]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Kakkar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2225556669]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[preety@test.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[22 Avenue circular road]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Hilversum]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[North Holland]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[12001233]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[NETHERLANDS]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[Preety@69]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Test@4123]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Test@4123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userRegistration -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="getResult" is-config="true" duration-ms="1" started-at="2020-04-04T13:22:30 IST" finished-at="2020-04-04T13:22:30 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userRegistration status=SUCCESS method=MercuryRegister.userRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="Exit" is-config="true" duration-ms="1120" started-at="2020-04-04T13:22:30 IST" finished-at="2020-04-04T13:22:31 IST">
+        <test-method status="PASS" signature="Exit()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a]" name="Exit" is-config="true" duration-ms="1136" started-at="2020-04-13T10:15:37 IST" finished-at="2020-04-13T10:15:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Exit -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.MercuryRegister@663c9e7a]" name="endReport" is-config="true" duration-ms="301" started-at="2020-04-04T13:22:31 IST" finished-at="2020-04-04T13:22:32 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.qa.TestCase.OrangeHRMLoginTest@3b0fe47a]" name="endReport" is-config="true" duration-ms="511" started-at="2020-04-13T10:15:38 IST" finished-at="2020-04-13T10:15:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.qa.TestCase.MercuryRegister -->
+      </class> <!-- com.qa.TestCase.OrangeHRMLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
