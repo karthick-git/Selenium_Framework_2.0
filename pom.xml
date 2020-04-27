@@ -58,8 +58,9 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-support</artifactId>
-			<version>3.12.0</version>
+			<version>2.53.0</version>
 		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
 		<dependency>
 			<groupId>com.codeborne</groupId>
@@ -150,24 +151,34 @@
 			<artifactId>snakeyaml</artifactId>
 			<version>1.26</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.10</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-common -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-common</artifactId>
+			<version>2.0b1</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion-DataProviders 
-		<dependency>
-			<groupId>com.paypal.selion</groupId>
-			<artifactId>SeLion-DataProviders</artifactId>
-			<version>1.2.0</version>
-		</dependency>-->
+			<dependency> <groupId>com.paypal.selion</groupId> <artifactId>SeLion-DataProviders</artifactId> 
+			<version>1.2.0</version> </dependency> -->
 		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion-Common 
-		<dependency>
-			<groupId>com.paypal.selion</groupId>
-			<artifactId>SeLion-Common</artifactId>
-			<version>1.2.0</version>
-		</dependency>-->
-		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion
-		<dependency>
-			<groupId>com.paypal.selion</groupId>
-			<artifactId>SeLion</artifactId>
-			<version>1.2.0</version>
-		</dependency> -->
+			<dependency> <groupId>com.paypal.selion</groupId> <artifactId>SeLion-Common</artifactId> 
+			<version>1.2.0</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.paypal.selion/SeLion <dependency> 
+			<groupId>com.paypal.selion</groupId> <artifactId>SeLion</artifactId> <version>1.2.0</version> 
+			</dependency> -->
 
 	</dependencies>
 
@@ -201,6 +212,11 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.1</version>
 			</plugin>
 		</plugins>
 	</build>

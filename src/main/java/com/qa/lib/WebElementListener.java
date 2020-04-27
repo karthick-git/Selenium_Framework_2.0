@@ -75,19 +75,16 @@ public class WebElementListener implements WebDriverEventListener {
 	public void afterScript(String script, WebDriver driver) {
 	}
 
-	@Override
 	public void afterAlertAccept(WebDriver arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void afterAlertDismiss(WebDriver arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void afterChangeValueOf(WebElement arg0, WebDriver arg1, CharSequence[] arg2) {
 		// TODO Auto-generated method stub
 		
@@ -99,25 +96,21 @@ public class WebElementListener implements WebDriverEventListener {
 		
 	}
 
-	@Override
 	public void afterSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void beforeAlertAccept(WebDriver arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void beforeAlertDismiss(WebDriver arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void beforeChangeValueOf(WebElement arg0, WebDriver arg1, CharSequence[] arg2) {
 		// TODO Auto-generated method stub
 		
@@ -129,19 +122,16 @@ public class WebElementListener implements WebDriverEventListener {
 		
 	}
 
-	@Override
 	public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public <X> void beforeGetScreenshotAs(OutputType<X> arg0) {
 		// TODO Auto-generated method stub
 		
