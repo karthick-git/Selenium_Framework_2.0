@@ -29,62 +29,62 @@ public final class BrowserDriver implements ImprovedDriver {
 	private WebDriver driver;
 	private JavascriptExecutor jsExecutor;
 	private WebDriverWait wait;
-	private final String browserName;
+	//private final String browserName;
 	public static Logger logger=LogManager.getLogger(BrowserDriver.class);
-	private final String chromeDriverPath = "./src/main/resources/drivers/chromedriver.exe";
+	//private final String chromeDriverPath = "./src/main/resources/drivers/chromedriver.exe";
 	
-	public BrowserDriver(String browserName) {
-		this.browserName = browserName;
-		createDriver(browserName);
-		this.wait = new WebDriverWait(driver, 60);
-		this.jsExecutor = (JavascriptExecutor) driver;
-	}
-
-	private void createDriver(String browserName)
-	{
-		switch (browserName.toUpperCase()) {
-			case "FIREFOX":
-				createFirefoxDriver();
-				break;
-		
-			case "CHROME":
-				createChromeDriver();
-				break;
-				
-			default:
-				throw new IllegalArgumentException ("invalid browser name");
-		}				
-	}
-	
-	private void createChromeDriver() {
-		
-		File chromeDriverFile = new File(chromeDriverPath);
-		if (!chromeDriverFile.exists())
-			throw new RuntimeException("chrome driver does not exist on " + 
-		                                chromeDriverPath);
-		
-		try {
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-			this.driver = new ChromeDriver();
-		}
-		catch (Exception ex) {
-			throw new RuntimeException("could not create the chrome driver");
-		}
-	}
-	
-	private void createFirefoxDriver() {
-		try {
-			this.driver = new FirefoxDriver();
-		}
-		catch (Exception ex) {
-			throw new RuntimeException("could not create the firefox driver");
-		}
-	}
-	
-	@Override
-	public String toString() {
-		return this.browserName;
-	}
+//	public BrowserDriver(String browserName) {
+//		this.browserName = browserName;
+//		createDriver(browserName);
+//		this.wait = new WebDriverWait(driver, 60);
+//		this.jsExecutor = (JavascriptExecutor) driver;
+//	}
+//
+//	private void createDriver(String browserName)
+//	{
+//		switch (browserName.toUpperCase()) {
+//			case "FIREFOX":
+//				createFirefoxDriver();
+//				break;
+//		
+//			case "CHROME":
+//				createChromeDriver();
+//				break;
+//				
+//			default:
+//				throw new IllegalArgumentException ("invalid browser name");
+//		}				
+//	}
+//	
+//	private void createChromeDriver() {
+//		
+//		File chromeDriverFile = new File(chromeDriverPath);
+//		if (!chromeDriverFile.exists())
+//			throw new RuntimeException("chrome driver does not exist on " + 
+//		                                chromeDriverPath);
+//		
+//		try {
+//			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+//			this.driver = new ChromeDriver();
+//		}
+//		catch (Exception ex) {
+//			throw new RuntimeException("could not create the chrome driver");
+//		}
+//	}
+//	
+//	private void createFirefoxDriver() {
+//		try {
+//			this.driver = new FirefoxDriver();
+//		}
+//		catch (Exception ex) {
+//			throw new RuntimeException("could not create the firefox driver");
+//		}
+//	}
+//	
+//	@Override
+//	public String toString() {
+//		return this.browserName;
+//	}
 	
 	public WebDriver getWrappedDriver() {
 		return this.driver;

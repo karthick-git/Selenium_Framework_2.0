@@ -11,7 +11,7 @@ public class PropertyFile {
 	
 	private Properties properties;
 	
-	private final String propertyFileName = "./src/main/resources/project.properties";
+	private final String propertyFileName = "./src/main/resources/Conf.properties";
 	
 	public PropertyFile() {		
 		validateFileExists();

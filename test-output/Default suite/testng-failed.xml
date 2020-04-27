@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestCase.OrangeHRMLoginTest">
+      <class name="com.qa.TestCase.TestClass">
         <methods>
-          <include name="test1"/>
-          <include name="setUpTest"/>
+          <include name="setup"/>
           <include name="getResult"/>
+          <include name="transactionFailsForIncorrectPaymentInfo" invocation-numbers="0"/>
           <include name="Exit"/>
           <include name="ReportSetup"/>
           <include name="endReport"/>
         </methods>
-      </class> <!-- com.qa.TestCase.OrangeHRMLoginTest -->
+      </class> <!-- com.qa.TestCase.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

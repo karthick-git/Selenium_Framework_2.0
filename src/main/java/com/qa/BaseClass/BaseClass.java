@@ -1,4 +1,10 @@
 package com.qa.BaseClass;
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElement;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -7,7 +13,9 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Collections;
+import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 //The below 2 import statements are used in case of log4j2
@@ -15,13 +23,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 
 //The below 2 import statements are used in case of log4j
 //import org.apache.log4j.Logger;
 //import org.apache.log4j.PropertyConfigurator;
 
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,6 +43,8 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -45,11 +61,11 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.lib.TakeScreenshot;
 import com.qa.lib.WebElementListener;
+import com.qa.utils.driver.ImprovedDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass
-{
+public class BaseClass{
 
 	public static WebDriver driver;
 	public static Properties prop;
@@ -68,8 +84,7 @@ public class BaseClass
 
 	@BeforeSuite
 
-	public void ReportSetup() throws IOException 
-	{
+	public void ReportSetup() throws IOException {
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/STMExtentReport1.html");
 		extent = new ExtentReports ();
 		extent.attachReporter(htmlReporter);
@@ -84,8 +99,8 @@ public class BaseClass
 	}
 
 
-	public BaseClass()
-	{
+	public BaseClass(){
+		
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/resources/"
@@ -149,7 +164,7 @@ public class BaseClass
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-		driver.get(prop.getProperty("url"));
+		//driver.get(prop.getProperty("url"));
 
 	}
 
@@ -196,10 +211,8 @@ public class BaseClass
 	{
 		extent.flush();
 	}
-
-
-
-
+	
+	
 }
 
 
