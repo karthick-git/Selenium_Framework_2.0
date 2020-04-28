@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import com.qa.BaseClass.BaseClass;
-import com.qa.TestPackage.AmazonLoginPage;
+import com.qa.pageobjects.amazon.AmazonLoginPage;
 
 public class CsvUtils extends BaseClass{
 	public int row;

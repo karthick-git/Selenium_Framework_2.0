@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\k.ab.srinivasan\AppData\Local\Temp\testng-eclipse--1518026478\testng-customsuite.xml</span>
+                    <span>C:\Users\k.ab.srinivasan\AppData\Local\Temp\testng-eclipse--807274586\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.TestCase.TestClass" hash-for-method="transactionFailsForIncorrectPaymentInfo(iphone)">transactionFailsForIncorrectPaymentInfo(iphone)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.TestCase.orangeHRM.OrangeHRMLoginTest" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,18 +120,46 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.TestCase.TestClass</span>
+              <span class="class-name">com.qa.TestCase.orangeHRM.OrangeHRMLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="transactionFailsForIncorrectPaymentInfo(iphone)">
-                  </a> <!-- transactionFailsForIncorrectPaymentInfo(iphone) -->
-                  <span class="method-name">transactionFailsForIncorrectPaymentInfo</span>
-                  <span class="parameters">(iphone)</span>
-                  <div class="stack-trace">com.qa.exceptions.HtmlElementsException: home page is not displayed
-	at com.qa.bestbuy.pageobjects.HomePage.open(HomePage.java:29)
-	at com.qa.TestCase.TestClass.transactionFailsForIncorrectPaymentInfo(TestClass.java:62)
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CDC2-L-84613MC&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\KAB~1.SRI\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:60517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 072340810ead06564b17a224c0cddaff
+*** Element info: {Using=id, value=txtUsername}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy28.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at com.qa.utils.ExcelUtils.excelLogin(ExcelUtils.java:182)
+	at com.qa.TestCase.orangeHRM.OrangeHRMLoginTest.test1(OrangeHRMLoginTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,7 +197,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\k.ab.srinivasan\AppData\Local\Temp\testng-eclipse--1518026478\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\k.ab.srinivasan\AppData\Local\Temp\testng-eclipse--807274586\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,7 +206,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.TestCase.TestClass&quot;/&gt;
+      &lt;class name=&quot;com.qa.TestCase.orangeHRM.OrangeHRMLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -220,14 +248,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'transactionFailsForIncorrectPaymentInfo')
-data.setCell(0, 2, 'com.qa.TestCase.TestClass')
-data.setCell(0, 3, 24294);
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'com.qa.TestCase.orangeHRM.OrangeHRMLoginTest')
+data.setCell(0, 3, 20547);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,34 +281,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.TestCase.TestClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.TestCase.orangeHRM.OrangeHRMLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">ReportSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-suite before">
-                <span class="method-name">setup</span>
-                <span class="method-start">191 ms</span>
-              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">155 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">transactionFailsForIncorrectPaymentInfo(iphone)</span>
-                <span class="method-start">20292 ms</span>
+                <span class="method-name">test1</span>
+                <span class="method-start">25770 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getResult([TestResult name=transactionFailsForIncorrectPaymentInfo status=FAILURE method=TestClass.transaction...)</span>
-                <span class="method-start">44741 ms</span>
+                <span class="method-name">getResult([TestResult name=test1 status=FAILURE method=OrangeHRMLoginTest.test1()[pri:0, instance:com.qa.TestC...)</span>
+                <span class="method-start">46473 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">Exit</span>
-                <span class="method-start">44776 ms</span>
+                <span class="method-start">46856 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">45920 ms</span>
+                <span class="method-start">48128 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
