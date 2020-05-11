@@ -8,3 +8,4 @@ test-output/Suite/*
 .settings/
 log/*
 allure-results/*
+/target/
